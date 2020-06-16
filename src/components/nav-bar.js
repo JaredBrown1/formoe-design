@@ -3,21 +3,24 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../design_files/Logo.jpg";
 
-const Container = styled.div`
-  background-color: red;
+const MainContainer = styled.div`
+  display: flex;
+  background-color: whitesmoke;
   max-width: 80%;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  font-size: 50px;
   padding-top: 30px;
+`;
+
+const Container = styled.div`
+  margin: 0 auto;
+  display: flex;
+  font-size: 20px;
 `;
 
 const LinkStyle = {
   textDecoration: "none",
-  backgroundColor: "white",
   height: "50px",
-  width: "320px",
+  width: "150px",
   color: "gray",
   borderRadius: "50px",
   paddingBottom: "10px",
@@ -25,23 +28,32 @@ const LinkStyle = {
 
 const NavBar = () => {
   return (
-    <Container>
-      <Link style={LinkStyle} to="/">
-        Home
-      </Link>
-      <Link style={LinkStyle} to="/services">
-        Services
-      </Link>
-      <Link to="/">
-        <img src={logo} alt="Formoe Design Logo" width="150px" height="80px" />
-      </Link>
-      <Link style={LinkStyle} to="/about">
-        About
-      </Link>
-      <Link style={LinkStyle} to="/certifications">
-        Certifications
-      </Link>
-    </Container>
+    <MainContainer>
+      <Container>
+        <Link to="/">
+          <img
+            src={logo}
+            alt="Formoe Design Logo"
+            width="150px"
+            height="80px"
+          />
+        </Link>
+      </Container>
+      <Container>
+        <Link style={LinkStyle} to="/">
+          Home
+        </Link>
+        <Link style={LinkStyle} to="/services">
+          Services
+        </Link>
+        <Link style={LinkStyle} to="/about">
+          About
+        </Link>
+        <Link style={LinkStyle} to="/certifications">
+          Certifications
+        </Link>
+      </Container>
+    </MainContainer>
   );
 };
 

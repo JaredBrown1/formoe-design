@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Image from "../design_files/facebook.png";
 
 const Container = styled.div`
-  background-color: gray;
+  background-color: whitesmoke;
   max-width: 80%;
   height: 500px;
   margin: 0 auto;
@@ -18,6 +18,7 @@ const HomeCont = styled.div`
 const ImageStyle = styled.img`
   height: 300px;
   width: 500px;
+  padding-top: 35px;
 `;
 
 const TextStyle = styled.h2`

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Image from "../design_files/gary-pic.jpg";
 
 const Container = styled.div`
-  background-color: gray;
+  background-color: whitesmoke;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -27,7 +27,7 @@ const About = () => {
         <ImageStyle src={Image} alt="pic of gary" />
       </AboutCont>
       <AboutCont>
-        <h3>
+        <p>
           Hi my name is Gary Formoe, owner and creator of 4MO Design.
           <br />
           I have been working in the construction industry since 1974. In
@@ -40,10 +40,10 @@ const About = () => {
           <br />
           Temecula. I have been drafting plans for building projects since{" "}
           <br /> 1987. Due to my 25 years of experience with the County and
-          City, I <br /> am well aware of what is require to be shown on the
+          City, I <br /> am well aware of what is required to be shown on the
           plans to be <br /> approved by the plan check division. I specialize
-          in electrical, <br /> plumbing and energy reports and code consulting
-        </h3>
+          in electrical, <br /> plumbing and energy reports and code consulting.
+        </p>
       </AboutCont>
     </Container>
   );

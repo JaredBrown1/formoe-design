@@ -9,7 +9,7 @@ const Feetstyles = styled.div`
 `;
 
 const TextStyles = styled.h1`
-  background-color: white;
+  background-color: whitesmoke;
   width: 800px;
   margin: 0 auto;
 `;
